@@ -12,10 +12,8 @@
 
 <body>
     <main id="main-doc">
-        <section class="main-section">
-            <header>
-                <h2>Introduccion a python</h2>
-            </header>
+        <section class="main-section" id="Introducción_a_Python">
+            <header>Introducción a Python</header>
             <p>Python es un potente lenguaje de programación fácil de aprender. Tiene estructuras de datos eficientes de
                 alto nivel y un enfoque simple pero efectivo para la programación orientada a objetos. La elegante
                 sintaxis y la escritura dinámica de Python, junto con su naturaleza interpretada, lo convierten en un
@@ -30,9 +28,22 @@
                 y documentación adicional.
             </p>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="Características">
+            <header>Características</header>
+            <p>Las características del lenguaje de programación Python se resumen a continuación: </p>
+            <ul>
+                <li>Fuertemente tipado</li>
+                <li>Es un lenguaje interpretado, no compilado, usa tipado dinámico, fuertemente tipado.</li>
+                <li>Es multiplataforma, lo cual es ventajoso para hacer ejecutable su código fuente entre varios sistema operativos.</li>
+                <li>Es un lenguaje de programación multiparadigma, el cual soporta varios paradigma de programación como orientación a objetos, estructurada, programación imperativa y, en menor medida, programación funcional.</li>
+                <li>En Python, el formato del código (p. ej., la indentación) es estructural.</li>
+            </ul>
+
+            <p>Y a pesar de ser un lenguaje de programación ortientado a obejtos, también admite la programación imperativa o funcional</p>
+        </section>
+        <section class="main-section" id="Una_demostración_de_Python">
             <header>
-                <h2>Una demostracion de Python</h2>
+                Una demostración de Python
             </header>
             <p>En los siguientes ejemplos, la entrada y la salida se distinguen por la presencia o ausencia de mensajes
                 (>>> y ...): para repetir el ejemplo, debe escribir todo después del mensaje, cuando aparece el mensaje;
@@ -50,15 +61,15 @@
                 <br><br> Algunos ejemplos:
             </p>
             <div class="div-code"><code>
-                # this is the first comment
-                <br>spam = 1  # and this is the second comment
-                <br>          # ... and now a third!
-                <br>text = "# This is not a comment because it's inside quotes."
+                # Este es el primer comentario
+                <br>spam = 1  # Y este el segundo
+                <br>          # ... ¿Ahora el tercero!
+                <br>text = "# Este no es un comentario por estar entre comillas."
             </code></div>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="Números">
             <header>
-                <h2>Números</h2>
+                Números
             </header>
             <p>El intérprete actúa como una simple calculadora: puede escribir una expresión en él y escribirá el valor.
                 La sintaxis de expresión es sencilla: los operadores +, -, * y / funcionan como en la mayoría de los
@@ -76,31 +87,65 @@
                 <br>1.6
             </code></div>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="String">
             <header>
-                <h2></h2>
+                String
             </header>
-            <p></p>
-            <code></code>
-            <p></p>
+            <p>Además de los números, Python también puede manipular cadenas, que se pueden expresar de varias formas.
+                Pueden encerrarse entre comillas simples ('...') o comillas dobles ("...") con el mismo resultado 2. \
+                se puede usar para escapar de las comillas:</p>
+            <div class="div-code"><code>
+                    >>> 'spam eggs'  # comillas simple
+                        <br>'spam eggs'
+                        <br> >>> 'doesn\'t'  # use \' para escapar de la comilla simple...
+                        <br> "doesn't"
+                        <br> >>> "doesn't"  # ...o use comillas dobles
+                        <br> "doesn't"
+                        <br> >>> '"Yes," they said.'
+                        <br> '"Yes," they said.'
+                        <br>>>> "\"Yes,\" they said."
+                        <br>'"Yes," they said.'
+                        <br>>>> '"Isn\'t," they said.'
+                        <br>'"Isn\'t," they said.'
+                </code></div>
+            <p>En el intérprete interactivo, la cadena de salida está entre comillas y los caracteres especiales se
+                escapan con barras invertidas. Si bien esto a veces puede parecer diferente de la entrada (las comillas
+                adjuntas pueden cambiar), las dos cadenas son equivalentes. La cadena se incluye entre comillas dobles
+                si la cadena contiene comillas simples y sin comillas dobles; de lo contrario, se incluye entre comillas
+                simples. La función print () produce una salida más legible, omitiendo las comillas adjuntas e
+                imprimiendo caracteres especiales y de escape:</p>
+            <div class="div-code"><code>
+                    >>> '"Isn\'t," they said.'
+                    <br>'"Isn\'t," they said.'
+                    <br> >>> print('"Isn\'t," they said.')
+                    <br>"Isn't," they said.
+                </code></div>
         </section>
-        <section class="main-section">
-            <header></header>
-            <p></p>
-            <code></code>
+        <section class="main-section" id="List">
+            <header>List</header>
+            <p>Python conoce varios tipos de datos compuestos, que se utilizan para agrupar otros valores. La más
+                versátil es la lista, que se puede escribir como una lista de valores (elementos) separados por comas
+                entre corchetes. Las listas pueden contener elementos de diferentes tipos, pero por lo general todos los
+                elementos tienen el mismo tipo.</p>
+                <div class="div-code"><code>
+                    >>> squares = [1, 4, 9, 16, 25]
+                    <br>>>> squares
+                    <br>[1, 4, 9, 16, 25]
+                </code></div>
             <p></p>
         </section>
     </main>
-    <nav id="nav-doc">
+    <nav id="navbar">
         <header>
-            Title
+            <h1>Python Documentación</h1>
         </header>
-        <ol>
-            <li><a href="" class="nav-link"></a></li>
-            <li><a href="" class="nav-link"></a></li>
-            <li><a href="" class="nav-link"></a></li>
-            <li><a href="" class="nav-link"></a></li>
-            <li><a href="" class="nav-link"></a></li>
+        <ol id="nav-ol">
+            <li><a href="#Introducción_a_Python" class="nav-link">Introducción a Python</a></li>
+            <li><a href="#Características" class="nav-link">Características</a></li>
+            <li><a href="#Una_demostración_de_Python" class="nav-link">Una demostración de Python</a></li>
+            <li><a href="#Números" class="nav-link">Números</a></li>
+            <li><a href="#String" class="nav-link">String</a></li>
+            <li><a href="#List" class="nav-link">List</a></li>
         </ol>
     </nav>
 </body>
